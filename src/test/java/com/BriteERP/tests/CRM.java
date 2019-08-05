@@ -8,8 +8,12 @@ import com.BriteERP.utilities.ConfigurationReader;
 import com.BriteERP.utilities.Driver;
 import com.BriteERP.utilities.TestBase;
 import com.github.javafaker.Faker;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class CRM extends TestBase {
     Faker faker = new Faker();
@@ -47,11 +51,9 @@ public class CRM extends TestBase {
         crmPage.switchButton("list").click();
         extentLogger.info("Comparing expected book price with price appeared on the pipeline table");
         BrowserUtils.waitForPageToLoad(2);
-        String actualBookPrice = "";
-        if(crmPage.pipelineTableBody(1,9).getText().equals(expectedBookPrice)) {
-            actualBookPrice = crmPage.pipelineTableBody(1, 9).getText();
-        }
-
+        String actualBookPrice = crmPage.pipelineTableBody(1,9).getText();
+         actualBookPrice = crmPage.pipelineTableBody(1,9).getText();
+        System.out.println(actualBookPrice);
         Assert.assertEquals(expectedBookPrice,actualBookPrice,"Don't match");
         extentLogger.info("TEST PASSED");
 

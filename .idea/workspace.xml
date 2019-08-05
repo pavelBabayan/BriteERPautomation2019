@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6fae383-b629-4d32-8476-55e80d85a2b1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteERP/tests/CRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BriteERP/tests/CRM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteERP/tests/CRM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/BriteERP/tests/CRM.class" afterDir="false" />
