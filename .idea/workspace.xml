@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d6fae383-b629-4d32-8476-55e80d85a2b1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteERP/pages/CRMPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BriteERP/pages/CRMPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/BriteERP/tests/CRM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/BriteERP/tests/CRM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteERP/pages/CRMPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/BriteERP/pages/CRMPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/BriteERP/tests/CRM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/BriteERP/tests/CRM.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/report.html" afterDir="false" />
     </list>
@@ -48,7 +50,7 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.CRM.test1">
-    <configuration name="CRM" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CRM.test1 (1)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BriteERPautomation" />
       <extension name="coverage">
         <pattern>
@@ -58,7 +60,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.BriteERP.tests" />
       <option name="MAIN_CLASS_NAME" value="com.BriteERP.tests.CRM" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -140,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CRM.test1" />
+        <item itemvalue="TestNG.CRM.test1 (1)" />
         <item itemvalue="TestNG.CRM.test1 (4)" />
         <item itemvalue="TestNG.CRM.test1 (3)" />
         <item itemvalue="TestNG.CRM.test1 (2)" />
-        <item itemvalue="TestNG.CRM" />
       </list>
     </recent_temporary>
   </component>

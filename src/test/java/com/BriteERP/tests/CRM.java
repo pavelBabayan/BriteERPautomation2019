@@ -41,19 +41,19 @@ public class CRM extends TestBase {
         crmPage.createOpportunities(3,"Very High");
         BrowserUtils.waitForClickablility(crmPage.switchButton("pivot"),5);
         crmPage.switchButton("pivot").click();
-        BrowserUtils.waitForClickablility(crmPage.pipelineTableBody(2,1),5);
+        BrowserUtils.waitFor(2);
         crmPage.pipelineTableBody(2,1).click();
         crmPage.newButtonDropDown("Opportunity").click();
         BrowserUtils.waitFor(1);
         extentLogger.info("After created opportunities, we are collecting expected book price");
-        String  expectedBookPrice = crmPage.pipelineTableBody(3,2).getText();
+        String  expectedBookPrice = crmPage.getBookPrice(1);
         BrowserUtils.waitForClickablility(crmPage.switchButton("list"),5);
         crmPage.switchButton("list").click();
         extentLogger.info("Comparing expected book price with price appeared on the pipeline table");
         BrowserUtils.waitForPageToLoad(2);
         String actualBookPrice = crmPage.pipelineTableBody(1,9).getText();
-         actualBookPrice = crmPage.pipelineTableBody(1,9).getText();
-        System.out.println(actualBookPrice);
+        System.out.println("Expected book price: "+expectedBookPrice);
+        System.out.println("Actual book price: "+actualBookPrice);
         Assert.assertEquals(expectedBookPrice,actualBookPrice,"Don't match");
         extentLogger.info("TEST PASSED");
 
