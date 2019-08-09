@@ -100,19 +100,18 @@ public class CRMPage {
     }
 
     //TODO get book particular value from the table method
-    public String getBookPrice(int column) {
+    public String getBookPrice(int columnForItems, int columnForPrices,String item) {
         String book = "";
-        String bookPrice = "";
+        String price = "";
         int count = 0;
-        List<WebElement> bookName = Driver.get().findElements(By.xpath("//table//tbody//tr//td["+column+"]"));
+        List<WebElement> bookName = Driver.get().findElements(By.xpath("//table//tbody//tr//td["+columnForItems+"]"));
         for (WebElement el : bookName) {
             count++;
-            if (el.getText().equals("Book")){
-                book = el.getText();
+            if (el.getText().equalsIgnoreCase(item)){
+                price = pipelineTableBody(count,columnForPrices).getText();
                 break;
             }
         }
-       bookPrice = pipelineTableBody(count,2).getText();
-        return bookPrice;
+        return price;
     }
 }

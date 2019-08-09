@@ -46,7 +46,7 @@ public class CRM extends TestBase {
         crmPage.newButtonDropDown("Opportunity").click();
         BrowserUtils.waitFor(1);
         extentLogger.info("After created opportunities, we are collecting expected book price");
-        String  expectedBookPrice = crmPage.getBookPrice(1);
+        String  expectedBookPrice = crmPage.getBookPrice(1,2,"Book");
         BrowserUtils.waitForClickablility(crmPage.switchButton("list"),5);
         crmPage.switchButton("list").click();
         extentLogger.info("Comparing expected book price with price appeared on the pipeline table");
@@ -56,8 +56,6 @@ public class CRM extends TestBase {
         System.out.println("Actual book price: "+actualBookPrice);
         Assert.assertEquals(expectedBookPrice,actualBookPrice,"Don't match");
         extentLogger.info("TEST PASSED");
-
-
 
     }
 
