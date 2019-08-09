@@ -55,6 +55,11 @@ public class CRM extends TestBase {
         System.out.println("Expected book price: "+expectedBookPrice);
         System.out.println("Actual book price: "+actualBookPrice);
         Assert.assertEquals(expectedBookPrice,actualBookPrice,"Don't match");
+        BrowserUtils.waitForClickablility(crmPage.checkBoxHeader,5);
+        extentLogger.info("Deleting created opportunities");
+        crmPage.checkBoxHeader.click();
+        BrowserUtils.waitFor(1);
+        crmPage.actionDropDownButton("Delete");
         extentLogger.info("TEST PASSED");
 
     }

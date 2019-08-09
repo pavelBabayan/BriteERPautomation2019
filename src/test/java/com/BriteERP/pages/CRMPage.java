@@ -32,6 +32,11 @@ public class CRMPage {
     public WebElement createButton;
 
 
+    @FindBy(xpath = "//table/thead/tr/th/div/input")
+    @CacheLookup
+    public WebElement checkBoxHeader;
+
+
     //TODO creating opportunities
     public void createOpportunities(int num, String priorityTxt) {
         for (int i = 1; i <= num; i++) {
@@ -113,5 +118,18 @@ public class CRMPage {
             }
         }
         return price;
+    }
+
+//TODO Action drop down button
+    public void actionDropDownButton(String name){
+        Driver.get().findElement(By.xpath("(//span[@class='caret'])[2]")).click();
+        WebElement el = Driver.get().findElement(By.xpath("(//ul[@class='dropdown-menu'])[4]/li/a[contains(text(),'"+name+"')]"));
+        el.click();
+        if(name.equalsIgnoreCase("Delete")){
+            WebElement el2 =  Driver.get().findElement(By.cssSelector(".modal-content div:nth-of-type(3) span"));
+            BrowserUtils.waitForClickablility(el2,5);
+            el2.click();
+          }
+
     }
 }

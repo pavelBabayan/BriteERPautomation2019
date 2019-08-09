@@ -68,7 +68,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CRM.test1 (3)" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CRM.test1 (2)" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="BriteERPautomation" />
       <extension name="coverage">
         <pattern>
@@ -143,10 +143,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.CRM.test1" />
+        <item itemvalue="TestNG.CRM.test1 (2)" />
         <item itemvalue="TestNG.CRM.test1 (5)" />
         <item itemvalue="TestNG.CRM.test1 (1)" />
         <item itemvalue="TestNG.CRM.test1 (4)" />
-        <item itemvalue="TestNG.CRM.test1 (3)" />
       </list>
     </recent_temporary>
   </component>
